@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login_label">Inicia sesion</string>
+    <string name="usuario_label">Nombre de usuario</string>
+    <string name="contrasena_label">Contraseña</string>
+    <string name="button_login__label">Inicia Sesion</string>
+    <string name="no_cuenta_label">¿Aun no tienes cuenta?</string>
+    <string name="registrate_label">Registrate</string>
+    <string name="titulo_label">Glucoapp</string>
+    <string name="registrate_title_label">Registro</string>
+    <string name="correo_hint">Correo electronico</string>
+    <string name="nombre_hint">Nombre</string>
+    <string name="apellidos_hint">Apellidos</string>
+    <string name="contrasena_hint">Contraseña</string>
+    <string name="username_hint">Username</string>
+    <string name="repita_contrasena_hint">Repita su contraseña</string>
+    <string name="peso_hint">Peso en Kg</string>
+    <string name="regresa_login_label">Regresar al login</string>
+    <string name="sexo_hint">M/F</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="qr_button">ESCANEAR QR</string>
+    <string name="qr_label_et">Código del medico</string>
+    <string name="vincula_medico_label">Vincular Medico</string>
+    <string name="omitir_label">Omitir vinculacion</string>
+    <string name="vincular_button_label">Vincular</string>
+    <string name="perfil_menu_label">Perfil</string>
+    <string name="perfil_promedio_label">Valor Promedio</string>
+    <string name="perfil_ultimo_label">Último Valor</string>
+    <string name="perfil_muestra_label">Tomar muestra</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bienvenido_label">Bienvenido</string>
+    <string name="registros_label">Registros</string>
+    <string name="inicio_label">Inicio</string>
+    <string name="cambiar_datos_button">Actualizar Información</string>
+    <string name="cambiar_contrasena_label">Cambiar contraseña</string>
+    <string name="solicita_contrasena_label">Para aplicar los cambios es necesaria la contraseña</string>
+    <string name="medico_hint">Sin Medico Asociado</string>
+    <string name="cerrar_sesion_menu">Cerrar sesión</string>
+
+
+</resources>
+

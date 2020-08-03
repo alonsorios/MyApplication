@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLigthGray"
+    tools:context=".ui.fragments.PerfilFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+
+
+    <TextView
+        android:id="@+id/textViewCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorLigthGray"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:layout_marginStart="4dp"
+        android:hint="@string/correo_hint"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <EditText
+        android:id="@+id/editTextModificaNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorLigthGray"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="15dp"
+        android:hint="@string/nombre_hint"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo" />
+
+    <EditText
+        android:id="@+id/editTextModificaApellidos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLigthGray"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="15dp"
+        android:hint="@string/apellidos_hint"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificaNombre"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLigthGray"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="15dp"
+        android:hint="@string/username_hint"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificaApellidos"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+    <EditText
+        android:id="@+id/editTextModificaPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLigthGray"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="15dp"
+        android:hint="@string/peso_hint"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsername"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+    <EditText
+        android:id="@+id/editTextModificaSexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_mf"
+        android:background="@color/colorLigthGray"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/sexo_hint"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificaPeso"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+    <TextView
+        android:id="@+id/textViewMedico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_healing"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/medico_hint"
+        android:textStyle="bold"
+        android:background="@color/colorLigthGray"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificaSexo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+
+
+
+    <TextView
+        android:id="@+id/textViewSolicitaContra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorLigthGray"
+        android:text="@string/solicita_contrasena_label"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMedico"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+
+    <EditText
+        android:id="@+id/editTextContrasena"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLigthGray"
+        android:drawableStart="@drawable/ic_contra"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"
+        android:hint="@string/contrasena_label"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSolicitaContra"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"/>
+
+
+    <Button
+        android:id="@+id/buttonConfirmar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login_ripple"
+        android:layout_marginBottom="32dp"
+        android:text="@string/cambiar_datos_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"  />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/cerrar_sesion_menu"
+            />
+
+    </group>
+</menu>

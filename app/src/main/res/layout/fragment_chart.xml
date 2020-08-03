@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLigthGray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ChartFragment">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/chartMuestras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
